@@ -1,0 +1,29 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="godot-colored-dithering"
+config/description="A plugin based on the shader written by markdibarry. Full credits go to him - link below:
+
+https://godotshaders.com/shader/arbitrary-color-reduction-ordered-dithering/
+"
+run/main_scene="res://addons/colored_dithering/demo.tscn"
+config/features=PackedStringArray("4.2", "GL Compatibility")
+config/icon="res://addons/colored_dithering/icon.png"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/colored_dithering/plugin.cfg")
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"

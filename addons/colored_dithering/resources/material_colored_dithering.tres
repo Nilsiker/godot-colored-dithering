@@ -1,0 +1,15 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://dcgqd4r7xk7k2"]
+
+[ext_resource type="Shader" path="res://addons/colored_dithering/shaders/main.gdshader" id="1_mnn2m"]
+
+[resource]
+shader = ExtResource("1_mnn2m")
+shader_parameter/quantize_size = 4.0
+shader_parameter/handle_scale = false
+shader_parameter/dither_enabled = true
+shader_parameter/bayer_pattern = 3.0
+shader_parameter/divisions = 16.0
+shader_parameter/contrast = 1.0
+shader_parameter/shift = 0.0
+shader_parameter/grayscale = false
+shader_parameter/use_palette = false
